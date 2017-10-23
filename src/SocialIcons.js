@@ -21,8 +21,6 @@ const MediumIcon = () => (
   />
 )
 
-// Adding this so I can push again
-
 function SocialIcons () {
   return (
     <ul className='SocialIcons'>
