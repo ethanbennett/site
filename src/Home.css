@@ -101,6 +101,38 @@
   }
   .right {
     width: 100%;
-    margin: 15px 2px 55px 2px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .Name {
+    padding-top: 250px;
+    font-size: 36px;
+  }
+  .Home {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .Content {
+    width: auto;
+    padding-top: 20px;
+  }
+  .Content p {
+    margin: 2em 0;
+    font-size: 14px;
+    line-height: 1.9em;
+    text-align: left;
+  }
+  .left {
+    width: 100%;
+    margin: 8px;
+    display: block;
+  }
+  .right {
+    min-width: 100%;
+    min-height: 100%;
+    margin-bottom: 55px;
+    margin-top: -150px;
   }
 }
