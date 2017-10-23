@@ -49,7 +49,6 @@ const projects = [
     url: '/copland'
   },
   {
-    image: require('./img/dots.jpg'),
     title: 'Dots',
     description: 'Inspired by the kids\' game Dots & Boxes.',
     url: '/dots'

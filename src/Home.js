@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import SocialIcons from './SocialIcons'
-import Viz from './Viz'
 import './Home.css'
 
 function shuffle (list) {
@@ -97,13 +96,10 @@ class Home extends Component {
       <div className='Home' style={{ height }}>
         <div className='left'>
           <div className='Content'>
-            <Name>Taylor Baldwin</Name>
+            <Name>Ethan Bennett</Name>
             <div style={{...secondaryElementsStyle, transitionDelay: '450ms'}}>
               <p>
-                I'm a full stack JavaScript engineer in New York City.
-                My creative projects generally relate to data visualization
-                or <a href='https://rolyatmax.github.io/sketches' target='_blank'>generative art</a>.
-                Formerly at New York Times R&D and Torando Labs. Currently at BuzzFeed.
+                I'm a full-stack software engineer in Denver, Colorado. I love building blockchain applications, writing about blockchains, and talking endlessly about blockchains to people who are tired of hearing me talk about blockchains. I'm also a guitarist of 15 years. Shoot me an email: ethan@ethanbennett.co
               </p>
             </div>
             <div style={{...secondaryElementsStyle, transitionDelay: '800ms'}}>
@@ -112,7 +108,10 @@ class Home extends Component {
           </div>
         </div>
         <div className='right'>
-          <Viz />
+          <img
+            alt="not here"
+            src={require('./img/site-photo.png')}
+          />
         </div>
       </div>
     )
