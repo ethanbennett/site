@@ -148,6 +148,7 @@ class Work extends Component {
           <div className='down-arrow' />
         </div>
         <WhenVisible onVisible={() => this.setState({ isVisible: true })}>
+            <h3 className="work-title">Projects</h3><br />
           <ul>
             {projects.map((project, i) =>
               <Project project={project} i={i} key={i} isVisible={isVisible} />)}

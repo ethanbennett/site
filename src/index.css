@@ -23,3 +23,10 @@ a:hover {
   padding-bottom: 3px;
   border-bottom-color: rgba(85, 153, 211, 0.65);
 }
+
+.work-title {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-left: 12px;
+  margin-bottom: 20px;
+}

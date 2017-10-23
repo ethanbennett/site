@@ -107,8 +107,9 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className='right'>
+        <div className='right' style={{...secondaryElementsStyle, transitionDelay: '450ms'}}>
           <img
+            className="photo"
             alt="not here"
             src={require('./img/site-photo.png')}
           />
