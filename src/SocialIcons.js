@@ -17,7 +17,7 @@ const LinkedInIcon = () => (
 const MediumIcon = () => (
   <img
     alt="not-here"
-    src={require('./img/medium-logo.png')}
+    src={require('./img/medium-icon.png')}
   />
 )
 
