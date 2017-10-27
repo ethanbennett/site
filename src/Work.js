@@ -30,7 +30,7 @@ const writing = [
   {
     image: require('./img/identity-image.jpg'),
     title: 'Identity Politics: How Ethereum Could Save Us from Fake News',
-    description: 'Identity is a perfect use-case for Ethereum, and it could help combat a problem that desperately needs solving.',
+    description: 'Identity is a perfect use-case for Ethereum, and with it, we could start to combat a problem that desperately needs solving.',
     url: 'https://hackernoon.com/ethereum-blockchain-identity-7378f0a8de4'
   },
   {
