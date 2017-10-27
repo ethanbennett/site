@@ -99,7 +99,7 @@ class Home extends Component {
             <Name>Ethan Bennett</Name>
             <div style={{...secondaryElementsStyle, transitionDelay: '450ms'}}>
               <p>
-                I'm a full-stack software engineer in Denver, Colorado. I love building blockchain applications, writing about blockchains, and talking endlessly about blockchains to people who are tired of hearing me talk about blockchains. I'm also a guitarist of 15 years. Shoot me an email: ethan@ethanbennett.co
+                I'm a full-stack software engineer in Denver, Colorado. I love building blockchain applications, writing about blockchains, and talking endlessly about blockchains to people who are sick of hearing me talk about blockchains. I'm also a guitarist of 15 years. Shoot me an email: <span className="bold">ethan@ethanbennett.co</span>
               </p>
             </div>
             <div style={{...secondaryElementsStyle, transitionDelay: '800ms'}}>

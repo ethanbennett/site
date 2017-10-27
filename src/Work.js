@@ -7,76 +7,23 @@ const romanNumerals = 'i ii iii iv v vi vii viii ix x xi xii xiii xiv xv xvi xvi
 
 const projects = [
   {
-    image: require('./img/nodes.jpg'),
-    title: 'Nodes',
+    image: require('./img/bookchain-screenshot.jpg'),
+    title: 'Bookchain',
     description: 'Particles float about, connecting with neighbors, to form an intricate web.',
-    url: '/nodes'
+    url: 'https://bookchain.herokuapp.com'
   },
   {
-    image: require('./img/physics-painting.jpg'),
-    title: 'Physics Painting',
+    image: require('./img/bureau-screenshot.jpg'),
+    title: 'Blockchain Credit Bureau',
     description: 'Particles react to forces, painting photographs to canvas.',
-    url: '/physics-painting'
+    url: 'https://blockchain-credit-bureau.herokuapp.com'
   },
   {
-    image: require('./img/citibike-trips.jpg'),
-    title: 'The CitiBike Commute',
+    image: require('./img/sourcery-screenshot.jpg'),
+    title: 'Sourcery',
     description: 'All the Citi Bike trips from a single day visualized in WebGL.',
-    url: '/citibike-trips'
+    url: 'https://sourcery-client.herokuapp.com'
   },
-  {
-    image: require('./img/citibike.jpg'),
-    title: 'CitiBike Summer',
-    description: 'Visualizing CitiBike usage for an average summer week.',
-    url: '/citibike'
-  },
-  {
-    image: require('./img/boids.jpg'),
-    title: 'Boids',
-    description: 'Experimenting with flocking algorithms. Each color flocks together, generating some interesting patterns.',
-    url: '/boids'
-  },
-  {
-    image: require('./img/waves.jpg'),
-    title: 'Waves',
-    description: 'Experiments in animating splines.',
-    url: '/waves'
-  },
-  {
-    image: require('./img/copland.jpg'),
-    title: 'Copland',
-    description: 'Combine piano and strings in this sequencer and watch the music evolve.',
-    url: '/copland'
-  },
-  {
-    title: 'Dots',
-    description: 'Inspired by the kids\' game Dots & Boxes.',
-    url: '/dots'
-  },
-  {
-    image: require('./img/rota.jpg'),
-    title: 'Rota',
-    description: 'Using a reinforcement learning technique to route traffic in a dynamic network.',
-    url: '/rota'
-  },
-  {
-    image: require('./img/sketches.jpg'),
-    title: 'Sketches',
-    description: 'A place to throw the generative art I make from time to time.',
-    url: 'https://rolyatmax.github.io/sketches/'
-  },
-  {
-    image: require('./img/tictactoe.jpg'),
-    title: 'Tic-Tac-Toe ML',
-    description: 'Teach your browser to play tic-tac-toe with a reinforcement learning algorithm.',
-    url: '/tictactoe'
-  },
-  {
-    image: require('./img/viz.jpg'),
-    title: 'Viz',
-    description: 'An early experiment that visualizes a favorite track in 3D space.',
-    url: '/viz'
-  }
 ]
 
 function Image ({ src, alt }) {
