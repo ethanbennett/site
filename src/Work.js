@@ -35,14 +35,14 @@ const writing = [
   },
   {
     image: require('./img/attacks-image.jpg'),
-    title: 'Ethereum Attacks!',
-    description: `This article is the first of many I’ll write as a consultant for Lunyr, and you can see the original publication there if you‘re participating in the private alpha. This is a formal, encyclopedia-style article about some of Ethereum's more common attack vectors.`,
+    title: 'Ethereum Attacks',
+    description: `This article is the first of many I’ll write as a consultant for Lunyr, and you can see the original publication there if you‘re participating in the private alpha. This is a formal, encyclopedia-style article about Ethereum's most common attack vectors.`,
     url: 'https://medium.com/@eth.anBennett/ethereum-attacks-802ddb4513ca'
   },
   {
     image: require('./img/ai-image.jpg'),
     title: "How \"Real\" is Artificial Intelligence?",
-    description: "How soon can we expect to see an apocalyptic robot uprising? Asking for a friend.",
+    description: "How soon should we expect to see an apocalyptic robot uprising? Asking for a friend.",
     url: 'https://hackernoon.com/dances-with-bees-how-we-get-from-image-recognition-to-westworld-72c3dc53a478'
   },
 ]
