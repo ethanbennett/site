@@ -50,7 +50,7 @@ class Project extends Component {
     const { project, i } = this.props
     return (
       <li className='Project' style={{ opacity: this.state.show ? 1 : 0 }}>
-        <a href={project.url}>
+        <a href={project.url} target="_blank">
           <Image src={project.image} alt={`${project.title} - ${project.description}`} />
           <h2>
             <span>{romanNumerals[i]}.</span> {project.title}
