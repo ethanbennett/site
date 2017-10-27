@@ -83,7 +83,7 @@
   line-height: 18px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
   .Work .scroll-indicator {
     top: -44px;
   }
@@ -109,3 +109,5 @@
     padding: 0 40px;
   }
 }
+
+

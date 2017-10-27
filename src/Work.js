@@ -26,6 +26,27 @@ const projects = [
   },
 ]
 
+const writing = [
+  {
+    image: require('./img/identity-image.jpg'),
+    title: 'Identity Politics: How Ethereum Could Save Us from Fake News',
+    description: 'Blurb about this article',
+    url: 'medium.com'
+  },
+  {
+    image: require('./img/attacks-image.jpg'),
+    title: 'Ethereum Attacks!',
+    description: `This article is the first of many I’ll write as a consultant for Lunyr, and you can see the original publication there if you‘re participating in the private alpha. This is a formal, encyclopedia-style article about some of Ethereum's more common attack vectors.`,
+    url: 'https://medium.com/@eth.anBennett/ethereum-attacks-802ddb4513ca'
+  },
+  {
+    image: require('./img/ai-image.jpg'),
+    title: "How \"Real\" is Artificial Intelligence?",
+    description: "How soon can we expect to see an apocalyptic robot uprising? Asking for a friend.",
+    url: 'https://hackernoon.com/dances-with-bees-how-we-get-from-image-recognition-to-westworld-72c3dc53a478'
+  },
+]
+
 function Image ({ src, alt }) {
   return (
     <div className='Image' style={{ backgroundImage: `url(${src})` }} />
@@ -95,10 +116,15 @@ class Work extends Component {
           <div className='down-arrow' />
         </div>
         <WhenVisible onVisible={() => this.setState({ isVisible: true })}>
-            <h3 className="work-title">Projects</h3><br />
+          <h3 className="work-title">Projects</h3><br />
           <ul>
             {projects.map((project, i) =>
               <Project project={project} i={i} key={i} isVisible={isVisible} />)}
+          </ul>
+          <h3 className="work-title">Writing</h3><br />
+          <ul>
+            {writing.map((article, i) =>
+              <Project project={article} i={i} key={i} isVisible={isVisible} />)}
           </ul>
         </WhenVisible>
       </div>
