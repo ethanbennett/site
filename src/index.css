@@ -23,18 +23,3 @@ a:hover {
   padding-bottom: 3px;
   border-bottom-color: rgba(85, 153, 211, 0.65);
 }
-
-.work-title {
-  font-family: 'Work Sans';
-  font-weight: 600;
-  font-size: 1.5em;
-  margin-left: 12px;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1000px) {
-  .work-title {
-    margin-left: 10px;
-    margin-bottom: initial;
-  }
-}
