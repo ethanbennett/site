@@ -9,19 +9,19 @@ const projects = [
   {
     image: require('./img/bookchain-screenshot.jpg'),
     title: 'Bookchain',
-    description: 'Particles float about, connecting with neighbors, to form an intricate web.',
+    description: 'A blockchain-powered library in use at Cognizant Accelerator. The desktop app is a searchable index of books and their availability, and the mobile app scans QR codes to check out and return books.',
     url: 'https://bookchain.herokuapp.com'
   },
   {
     image: require('./img/bureau-screenshot.jpg'),
     title: 'Blockchain Credit Bureau',
-    description: 'Particles react to forces, painting photographs to canvas.',
+    description: 'A decentralized platform for data sharing among microfinance institutions, built to lower the risk involved in loaning to people who don\'t have the means to establish credit. Part of the Blockchain for Social Impact Hackathon.',
     url: 'https://blockchain-credit-bureau.herokuapp.com'
   },
   {
     image: require('./img/sourcery-screenshot.jpg'),
     title: 'Sourcery',
-    description: 'All the Citi Bike trips from a single day visualized in WebGL.',
+    description: 'A tool for establishing transparent supply chains on Ethereum.',
     url: 'https://sourcery-client.herokuapp.com'
   },
 ]
