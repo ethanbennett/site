@@ -7,26 +7,38 @@ const romanNumerals = 'i ii iii iv v vi vii viii ix x xi xii xiii xiv xv xvi xvi
 
 const projects = [
   {
+    image: require('./img/panda.jpeg'),
+    title: 'Panda Exchange',
+    description: "A prototype for the Ethereum Foundation's market maker smart contract, which was built in Viper by Vitalik Buterin.",
+    url: "http://pandaexchange.io"
+  },
+  {
     image: require('./img/bookchain-screenshot.jpg'),
     title: 'Bookchain',
-    description: 'A blockchain-powered library in use at Cognizant Accelerator. The desktop app is a searchable index of books and their availability, and the mobile app scans QR codes to check out and return books.',
+    description: 'An Ethereum-powered library in use at Cognizant Quick Left. The desktop app is a searchable index of books and their availability, and the mobile app scans QR codes to check out and return books.',
     url: 'https://bookchain.herokuapp.com'
   },
   {
     image: require('./img/bureau-screenshot.jpg'),
     title: 'Blockchain Credit Bureau',
-    description: 'A decentralized platform for data sharing among microfinance institutions, built to lower the risk involved in loaning to people who don\'t have the means to establish credit. Part of the Blockchain for Social Impact Hackathon.',
+    description: 'A decentralized platform for data sharing among microfinance institutions, built to lower the risk involved in loaning to people who don\'t have the means to establish credit. Built for the Blockchain for Social Impact Hackathon.',
     url: 'https://blockchain-credit-bureau.herokuapp.com'
   },
   {
     image: require('./img/sourcery-screenshot.jpg'),
     title: 'Sourcery',
-    description: 'A tool for establishing transparent supply chains on Ethereum.',
+    description: 'A tool for establishing transparent supply chains on Ethereum; second place winner of the Turing Demo Competition.',
     url: 'https://sourcery-client.herokuapp.com'
   },
 ]
 
 const writing = [
+  {
+    image: require('./img/blockchain.jpeg'),
+    title: 'Ethereum Clients',
+    description: 'An in-depth overview of Ethereum clients. This article was originally commissioned and published by Lunyr.',
+    url: 'https://medium.com/@eth.anBennett/ethereum-clients-101-beginner-geth-parity-full-node-light-client-4bbd87bf1dee'
+  },
   {
     image: require('./img/identity-image.jpg'),
     title: 'Identity Politics: How Ethereum Could Save Us from Fake News',
@@ -36,7 +48,7 @@ const writing = [
   {
     image: require('./img/attacks-image.jpg'),
     title: 'Ethereum Attacks',
-    description: `This article is the first of many I’ll write as a consultant for Lunyr, and you can see the original publication there if you‘re participating in the private alpha. This is a formal, encyclopedia-style article about Ethereum's most common attack vectors.`,
+    description: "An exploration of attacks on the Ethereum network and smart contracts, commissioned and published by Lunyr.",
     url: 'https://medium.com/@eth.anBennett/ethereum-attacks-802ddb4513ca'
   },
   {
