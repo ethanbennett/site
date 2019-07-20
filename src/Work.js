@@ -31,7 +31,7 @@ const talks = [
     image: require('./img/ethdenver.png'),
     title: 'Out-of-the-box UX Upgrades: Dai.js and DSProxy',
     description: "In this live-coding workshop, I walk through a design pattern that allows for frictionless user interfaces with minimal technical overhead. Using MakerDAO's JavaScript SDK, I demonstrate how to build a simple dapp that leverages proxy contracts to let users execute several transactions atomically. I also use the SDK's transaction manager to easily update the UI when transactions are mined and confirmed.",
-    url: 'https://hackernoon.com/ethereum-blockchain-identity-7378f0a8de4'
+    url: 'https://www.youtube.com/watch?v=ww9BC3V6dCU'
   }
 ]
 
@@ -105,12 +105,12 @@ class Work extends Component {
         </div>
         <WhenVisible onVisible={() => this.setState({ isVisible: true })}>
           <h3 className="work-title">Work</h3><br />
-          <ul style={{marginBottom: '100px'}}>
+          <ul className="projects">
             {projects.map((project, i) =>
               <Project project={project} i={i} key={i} isVisible={isVisible} />)}
           </ul>
           <h3 className="work-title">Talks</h3><br />
-          <ul>
+          <ul className="talks">
             {talks.map((talk, i) =>
               <Project project={talk} i={i} key={i} isVisible={isVisible} />)}
           </ul>

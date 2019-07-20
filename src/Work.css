@@ -85,17 +85,37 @@
   line-height: 18px;
 }
 
+.projects {
+  margin-bottom: 60px !important;
+}
+
 @media screen and (max-width: 1000px) {
+  .Work {
+    margin-left: 0;
+  }
+
+  .Work ul {
+    margin-bottom: 120px;
+  }
+
+  .projects {
+    margin-bottom: 20px !important;
+  }
+
+  .projects li {
+    margin-bottom: 30 !important;
+  }
+
+  .talks li {
+    margin-bottom: 165px;
+  }
+
   .Work .scroll-indicator {
     top: -44px;
   }
 
   .Name {
     letter-spacing: 0;
-  }
-
-  .scroll-indicator {
-    /* margin-left: 42px !important; */
   }
 
   .scroll-indicator h3 {
