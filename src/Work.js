@@ -7,56 +7,32 @@ const romanNumerals = 'i ii iii iv v vi vii viii ix x xi xii xiii xiv xv xvi xvi
 
 const projects = [
   {
+    image: require('./img/dai.png'),
+    title: 'Recent Work',
+    description: 'Most of my side-projects have been gathering dust for years. Click here to see my recent work on GitHub.',
+    url: 'https://github.com/ethanbennett'
+  },
+  {
     image: require('./img/panda.jpeg'),
     title: 'Panda Exchange',
-    description: "A prototype for the Ethereum Foundation's market maker smart contract, which was built in Viper by Vitalik Buterin.",
+    description: "This automated market maker was one of the first dapps written in Viper (by Vitalik) to demo the capabilities of the language. I was hired to build this interface for it.",
     url: "http://pandaexchange.io"
-  },
-  {
-    image: require('./img/bookchain-screenshot.jpg'),
-    title: 'Bookchain',
-    description: 'An Ethereum-powered library in use at Cognizant Quick Left. The desktop app is a searchable index of books and their availability, and the mobile app scans QR codes to check out and return books.',
-    url: 'https://bookchain.herokuapp.com'
-  },
-  {
-    image: require('./img/bureau-screenshot.jpg'),
-    title: 'Blockchain Credit Bureau',
-    description: 'A decentralized platform for data sharing among microfinance institutions, built to lower the risk involved in loaning to people who don\'t have the means to establish credit. Built for the Blockchain for Social Impact Hackathon.',
-    url: 'https://blockchain-credit-bureau.herokuapp.com'
-  },
-  {
-    image: require('./img/sourcery-screenshot.jpg'),
-    title: 'Sourcery',
-    description: 'A tool for establishing transparent supply chains on Ethereum; second place winner of the Turing Demo Competition.',
-    url: 'https://sourcery-client.herokuapp.com'
-  },
+  }
 ]
 
-const writing = [
+const talks = [
   {
-    image: require('./img/blockchain.jpeg'),
-    title: 'Ethereum Clients',
-    description: 'An in-depth overview of Ethereum clients. This article was originally commissioned and published by Lunyr.',
-    url: 'https://medium.com/@eth.anBennett/ethereum-clients-101-beginner-geth-parity-full-node-light-client-4bbd87bf1dee'
+    image: require('./img/bsw.png'),
+    title: 'Credit, Lending, and Finance with Crypto',
+    description: 'The ICO hype has faded, but in its wake, there’s a much more sophisticated financial infrastructure growing on Ethereum. From on-chain representations of securities to crypto credit systems and loan platforms, this talk covers the state of “decentralized finance,” how it might interact with existing markets, and why it matters for average people and struggling economies.',
+    url: 'https://www.youtube.com/watch?v=l8c1oUkqV7E'
   },
   {
-    image: require('./img/identity-image.jpg'),
-    title: 'Identity Politics: How Ethereum Could Save Us from Fake News',
-    description: 'Identity is a perfect use-case for Ethereum, and with it, we could start to combat a problem that desperately needs solving.',
+    image: require('./img/ethdenver.png'),
+    title: 'Out-of-the-box UX Upgrades: Dai.js and DSProxy',
+    description: "In this live-coding workshop, I walk through a design pattern that allows for frictionless user interfaces with minimal technical overhead. Using MakerDAO's JavaScript SDK, I demonstrate how to build a simple dapp that leverages proxy contracts to let users execute several transactions atomically. I also use the SDK's transaction manager to easily update the UI when transactions are mined and confirmed.",
     url: 'https://hackernoon.com/ethereum-blockchain-identity-7378f0a8de4'
-  },
-  {
-    image: require('./img/attacks-image.jpg'),
-    title: 'Ethereum Attacks',
-    description: "An exploration of attacks on the Ethereum network and smart contracts, commissioned and published by Lunyr.",
-    url: 'https://medium.com/@eth.anBennett/ethereum-attacks-802ddb4513ca'
-  },
-  {
-    image: require('./img/ai-image.jpg'),
-    title: "How \"Real\" is Artificial Intelligence?",
-    description: "How soon should we expect to see an apocalyptic robot uprising? Asking for a friend.",
-    url: 'https://hackernoon.com/dances-with-bees-how-we-get-from-image-recognition-to-westworld-72c3dc53a478'
-  },
+  }
 ]
 
 function Image ({ src, alt }) {
@@ -128,15 +104,15 @@ class Work extends Component {
           <div className='down-arrow' />
         </div>
         <WhenVisible onVisible={() => this.setState({ isVisible: true })}>
-          <h3 className="work-title">Projects</h3><br />
-          <ul>
+          <h3 className="work-title">Work</h3><br />
+          <ul style={{marginBottom: '100px'}}>
             {projects.map((project, i) =>
               <Project project={project} i={i} key={i} isVisible={isVisible} />)}
           </ul>
-          <h3 className="work-title">Writing</h3><br />
+          <h3 className="work-title">Talks</h3><br />
           <ul>
-            {writing.map((article, i) =>
-              <Project project={article} i={i} key={i} isVisible={isVisible} />)}
+            {talks.map((talk, i) =>
+              <Project project={talk} i={i} key={i} isVisible={isVisible} />)}
           </ul>
         </WhenVisible>
       </div>

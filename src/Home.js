@@ -99,7 +99,7 @@ class Home extends Component {
             <Name>Ethan Bennett</Name>
             <div style={{...secondaryElementsStyle, transitionDelay: '450ms'}}>
               <p>
-                I'm a full-stack software engineer in Denver, Colorado. I love building blockchain applications, writing about blockchains, and talking endlessly about blockchains to people who are sick of hearing me talk about blockchains. I'm also a guitarist of 15 years. Shoot me an email: <span className="bold">ethan@ethanbennett.co</span>
+                I'm a full-stack software/blockchain engineer on the product development team at MakerDAO. I'm fascinated by the impending collision of crypto with traditional finance, and I'm passionate about working on projects that democratize access to banking and financial services for people all over the world. I'm also a guitarist of more than 15 years, and I love funny stuff.<br /><br />Feel free to reach out: <span className="bold">ethan@ethanbennett.co</span>
               </p>
             </div>
             <div style={{...secondaryElementsStyle, transitionDelay: '800ms'}}>

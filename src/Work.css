@@ -1,7 +1,8 @@
 .Work {
   width: 100%;
   max-width: 960px;
-  margin: auto;
+  margin-right: -80px;
+  margin-left: 100px;
 }
 
 .Work .scroll-indicator {
@@ -10,7 +11,7 @@
   cursor: pointer;
   margin: auto;
   position: relative;
-  top: -100px;
+  top: -79px;
   transition: opacity 700ms ease-in-out, transform 1.5s cubic-bezier(0.28, 0.8, 0.57, 0.98);
   opacity: 0;
   transform: translateY(-25px);
@@ -47,11 +48,11 @@
   align-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 240px;
 }
 
 .Project {
-  margin: 10px 10px 20px 20px;
+  margin: 0px 90px 0px 90px;
   height: 310px;
   width: 300px;
   opacity: 0;
@@ -69,6 +70,7 @@
 .Project h2 {
   font-size: 20px;
   margin: 23px 0;
+  line-height: initial;
 }
 
 .Project h2 span {
@@ -86,6 +88,14 @@
 @media screen and (max-width: 1000px) {
   .Work .scroll-indicator {
     top: -44px;
+  }
+
+  .Name {
+    letter-spacing: 0;
+  }
+
+  .scroll-indicator {
+    /* margin-left: 42px !important; */
   }
 
   .scroll-indicator h3 {
@@ -114,7 +124,6 @@
   font-family: 'Work Sans';
   font-weight: 600;
   font-size: 1.5em;
-  margin-left: 12px;
   margin-bottom: 20px;
   text-align: center;
 }
