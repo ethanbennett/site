@@ -70,11 +70,11 @@ class Project extends Component {
     const name = project.title === 'Panda Exchange' ? 'panda-image' : '';
 
     return (
-      <li className='Project' style={{ opacity: this.state.show ? 1 : 0, ...style }}>
+      <li className='Project' style={{ opacity: this.state.show ? 1 : 0 }}>
         <a href={project.url} target="_blank">
           <div className={name}><Image src={project.image} alt={`${project.title} - ${project.description}`} /></div>
           <h2>
-            <span>{romanNumerals[i]}.</span> {project.title}
+            <div className='project-name'><span>{romanNumerals[i]}.</span> {project.title}</div>
           </h2>
           <div className='description-wrapper'>
             <p className={ isTalk ? 'talk-p' : 'not-talk' }>{project.description}</p>
@@ -119,7 +119,7 @@ class Work extends Component {
         </div>
         <WhenVisible onVisible={() => this.setState({ isVisible: true })}>
           <h3 className="work-title">Work</h3><br />
-          <div style={{ marginRight: "-30px" }}>  
+          <div>  
             <ul className="projects">
               {projects.map((project, i) =>
                 <Project project={project} i={i} key={i} isVisible={isVisible} />)}

@@ -1,8 +1,8 @@
 .Work {
   width: 100%;
-  max-width: 960px;
+  /* max-width: 960px;
   margin-right: -80px;
-  margin-left: 100px;
+  margin-left: 100px; */
 }
 
 .Work .scroll-indicator {
@@ -18,7 +18,7 @@
 }
 
 .talk-list {
-  margin-right: -100px;
+  /* margin-right: -100px; */
 }
 
 .scroll-indicator h3 {
@@ -56,7 +56,7 @@
 }
 
 .Project {
-  margin: 0px 90px 0px 90px;
+  margin: 0px 50px 0px 50px;
   height: 310px;
   width: 300px;
   opacity: 0;
@@ -101,15 +101,21 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .Project {
+    margin: 0px 17px 0px 17px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .Work {
-    margin-left: 0px;
+    /* margin-left: 0px; */
     margin-bottom: -95px;
     max-width: 1000px;
   }
 
   .Work ul {
-    margin-bottom: 120px;
+    padding-bottom: 0px;
   }
 
   .projects {
@@ -118,10 +124,6 @@
 
   .projects li {
     margin-bottom: 30 !important;
-  }
-
-  .talks li {
-    margin-bottom: 165px;
   }
 
   .Work .scroll-indicator {
@@ -146,10 +148,15 @@
   }
   .Project .Image {
     height: 230px;
-    background-position: 75%;
+    background-position: 50%;
   }
   .Project h2 {
     padding: 10px 40px;
+    text-align: center;
+  }
+
+  .project-name {
+    display: inline-block;
   }
 
   .description-wrapper {
@@ -157,27 +164,24 @@
   }
 
   .Project p {
-    margin-left: 18px;
-    margin-right: 15px;
+    /* margin-left: 18px; */
+    /* margin-right: 15px; */
     width: 75%;
     display: inline-block;
   }
 
   .panda-image .Image {
-    background-position: 125%;
-  }
-
-  .talk-p {
-    margin-bottom: 45px !important;
+    /* background-position: 125%; */
   }
 
   .work-title {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-bottom: -25px;
   }
 
   .talk-title {
-    margin-left: 10px;
-    margin-bottom: 20px;
+    /* margin-left: 10px; */
+    margin-bottom: 0px;
+    padding-top: 45px;
   }
 }
