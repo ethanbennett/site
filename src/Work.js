@@ -76,7 +76,9 @@ class Project extends Component {
           <h2>
             <span>{romanNumerals[i]}.</span> {project.title}
           </h2>
-          <p className={ isTalk ? 'talk-p' : 'not-talk' }>{project.description}</p>
+          <div className='description-wrapper'>
+            <p className={ isTalk ? 'talk-p' : 'not-talk' }>{project.description}</p>
+          </div>
         </a>
       </li>
     )
