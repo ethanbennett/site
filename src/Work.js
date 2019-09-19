@@ -24,7 +24,7 @@ const talks = [
   {
     image: require('./img/dappcon.jpeg'),
     title: 'Why Finance Can Be Better on Ethereum',
-    description: 'In this talk, I argue that an important (and often overlooked) advantage that decentralized finance projects have over legacy institutions are their vastly more open-minded attitudes towards new approaches to economic thinking. As an example, I discuss complexity economics: an agent-based, bottom up view of markets as complex systems. Presented at Dappcon Berlin 2019.',
+    description: 'In this talk, I argue that an important (and often overlooked) advantage that decentralized finance projects have over legacy institutions are their vastly more open-minded attitudes towards new approaches to economic thinking. As an example, I discuss complexity economics: an agent-based, bottom up view of markets as complex systems.',
     url: 'https://www.youtube.com/watch?v=ID4OJZm6ETg'
   },
   {
@@ -67,11 +67,13 @@ class Project extends Component {
   render () {
     const { project, i, isTalk } = this.props;
     const style = isTalk ? { margin: '0px 60px 0px -20px' } : {};
+    const name = project.title === 'Panda Exchange' ? 'panda-image' : '';
+    console.log(name);
 
     return (
       <li className='Project' style={{ opacity: this.state.show ? 1 : 0, ...style }}>
         <a href={project.url} target="_blank">
-          <Image src={project.image} alt={`${project.title} - ${project.description}`} />
+          <div className={name}><Image src={project.image} alt={`${project.title} - ${project.description}`} /></div>
           <h2>
             <span>{romanNumerals[i]}.</span> {project.title}
           </h2>
@@ -122,8 +124,8 @@ class Work extends Component {
                 <Project project={project} i={i} key={i} isVisible={isVisible} />)}
             </ul>
           </div>
-          <h3 className="work-title">Talks</h3><br />
-          <div style={{marginRight: "-100px"}}>
+          <h3 className="work-title talk-title">Talks</h3><br />
+          <div className="talk-list">
             <ul className="talks">
               {talks.map((talk, i) =>
                 <Project isTalk={true} project={talk} i={i} key={i} isVisible={isVisible} style={{margin: "0px 4px 0px 26px !important"}} />)}
