@@ -22,6 +22,12 @@ const projects = [
 
 const talks = [
   {
+    image: require('./img/dappcon.jpeg'),
+    title: 'Why Finance Can Be Better on Ethereum',
+    description: 'In this talk, I argue that an important (and often overlooked) advantage that decentralized finance projects have over legacy institutions are their vastly more open-minded attitudes towards new approaches to economic thinking. As an example, I discuss complexity economics: an agent-based, bottom up view of markets as complex systems. Presented at Dappcon Berlin 2019.',
+    url: 'https://www.youtube.com/watch?v=ID4OJZm6ETg'
+  },
+  {
     image: require('./img/bsw.png'),
     title: 'Credit, Lending, and Finance with Crypto',
     description: 'The ICO hype has faded, but in its wake, there’s a much more sophisticated financial infrastructure growing on Ethereum. From on-chain representations of securities to crypto credit systems and loan platforms, this talk covers the state of “decentralized finance,” how it might interact with existing markets, and why it matters for average people and struggling economies.',
@@ -47,18 +53,23 @@ class Project extends Component {
     this.state = { show: false }
     this.delay = 150
   }
+
   componentWillReceiveProps ({ isVisible, i }) {
     if (!this.props.isVisible && isVisible) {
       this.timeoutToken = setTimeout(() => this.setState({ show: true }), i * this.delay)
     }
   }
+
   componentWillUnmount () {
     clearTimeout(this.timeoutToken)
   }
+
   render () {
-    const { project, i } = this.props
+    const { project, i, isTalk } = this.props;
+    const style = isTalk ? { margin: '0px 60px 0px -20px' } : {};
+
     return (
-      <li className='Project' style={{ opacity: this.state.show ? 1 : 0 }}>
+      <li className='Project' style={{ opacity: this.state.show ? 1 : 0, ...style }}>
         <a href={project.url} target="_blank">
           <Image src={project.image} alt={`${project.title} - ${project.description}`} />
           <h2>
@@ -110,10 +121,12 @@ class Work extends Component {
               <Project project={project} i={i} key={i} isVisible={isVisible} />)}
           </ul>
           <h3 className="work-title">Talks</h3><br />
-          <ul className="talks">
-            {talks.map((talk, i) =>
-              <Project project={talk} i={i} key={i} isVisible={isVisible} />)}
-          </ul>
+          <div style={{marginRight: "-80px"}}>
+            <ul className="talks">
+              {talks.map((talk, i) =>
+                <Project isTalk={true} project={talk} i={i} key={i} isVisible={isVisible} style={{margin: "0px 4px 0px 26px !important"}} />)}
+            </ul>
+          </div>
         </WhenVisible>
       </div>
     )
