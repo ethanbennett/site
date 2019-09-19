@@ -116,10 +116,12 @@ class Work extends Component {
         </div>
         <WhenVisible onVisible={() => this.setState({ isVisible: true })}>
           <h3 className="work-title">Work</h3><br />
-          <ul className="projects">
-            {projects.map((project, i) =>
-              <Project project={project} i={i} key={i} isVisible={isVisible} />)}
-          </ul>
+          <div style={{ marginRight: "-30px" }}>  
+            <ul className="projects">
+              {projects.map((project, i) =>
+                <Project project={project} i={i} key={i} isVisible={isVisible} />)}
+            </ul>
+          </div>
           <h3 className="work-title">Talks</h3><br />
           <div style={{marginRight: "-100px"}}>
             <ul className="talks">
