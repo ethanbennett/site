@@ -66,13 +66,11 @@ class Project extends Component {
 
   render () {
     const { project, i, isTalk } = this.props;
-    const style = isTalk ? { margin: '0px 60px 0px -20px' } : {};
-    const name = project.title === 'Panda Exchange' ? 'panda-image' : '';
 
     return (
       <li className='Project' style={{ opacity: this.state.show ? 1 : 0 }}>
         <a href={project.url} target="_blank">
-          <div className={name}><Image src={project.image} alt={`${project.title} - ${project.description}`} /></div>
+          <Image src={project.image} alt={`${project.title} - ${project.description}`} />
           <h2>
             <div className='project-name'><span>{romanNumerals[i]}.</span> {project.title}</div>
           </h2>
@@ -126,12 +124,10 @@ class Work extends Component {
             </ul>
           </div>
           <h3 className="work-title talk-title">Talks</h3><br />
-          <div className="talk-list">
-            <ul className="talks">
-              {talks.map((talk, i) =>
-                <Project isTalk={true} project={talk} i={i} key={i} isVisible={isVisible} style={{margin: "0px 4px 0px 26px !important"}} />)}
-            </ul>
-          </div>
+          <ul className="talks">
+            {talks.map((talk, i) =>
+              <Project isTalk={true} project={talk} i={i} key={i} isVisible={isVisible} style={{margin: "0px 4px 0px 26px !important"}} />)}
+          </ul>
         </WhenVisible>
       </div>
     )

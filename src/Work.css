@@ -1,8 +1,5 @@
 .Work {
   width: 100%;
-  /* max-width: 960px;
-  margin-right: -80px;
-  margin-left: 100px; */
 }
 
 .Work .scroll-indicator {
@@ -15,10 +12,6 @@
   transition: opacity 700ms ease-in-out, transform 1.5s cubic-bezier(0.28, 0.8, 0.57, 0.98);
   opacity: 0;
   transform: translateY(-25px);
-}
-
-.talk-list {
-  /* margin-right: -100px; */
 }
 
 .scroll-indicator h3 {
@@ -164,23 +157,15 @@
   }
 
   .Project p {
-    /* margin-left: 18px; */
-    /* margin-right: 15px; */
     width: 75%;
     display: inline-block;
   }
 
-  .panda-image .Image {
-    /* background-position: 125%; */
-  }
-
   .work-title {
-    /* margin-left: 10px; */
     margin-bottom: -25px;
   }
 
   .talk-title {
-    /* margin-left: 10px; */
     margin-bottom: 0px;
     padding-top: 45px;
   }
