@@ -6,6 +6,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+  .App {
+    overflow: hidden;
+  }
+}
+
 .lower-bar {
   background-color: #bf0000;
   width: 100vw;
