@@ -68,7 +68,6 @@ class Project extends Component {
     const { project, i, isTalk } = this.props;
     const style = isTalk ? { margin: '0px 60px 0px -20px' } : {};
     const name = project.title === 'Panda Exchange' ? 'panda-image' : '';
-    console.log(name);
 
     return (
       <li className='Project' style={{ opacity: this.state.show ? 1 : 0, ...style }}>
@@ -77,7 +76,7 @@ class Project extends Component {
           <h2>
             <span>{romanNumerals[i]}.</span> {project.title}
           </h2>
-          <p>{project.description}</p>
+          <p className={ isTalk ? 'talk-p' : 'not-talk' }>{project.description}</p>
         </a>
       </li>
     )
