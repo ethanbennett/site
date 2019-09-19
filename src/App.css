@@ -6,15 +6,8 @@
   position: relative;
 }
 
-@media screen and (max-width: 1080px) {
-  .App {
-    overflow-x: scroll;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .App {
-    overflow: hidden;
     max-width: 1000px;
   }
 }
