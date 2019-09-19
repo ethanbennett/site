@@ -121,7 +121,7 @@ class Work extends Component {
               <Project project={project} i={i} key={i} isVisible={isVisible} />)}
           </ul>
           <h3 className="work-title">Talks</h3><br />
-          <div style={{marginRight: "-80px"}}>
+          <div style={{marginRight: "-100px"}}>
             <ul className="talks">
               {talks.map((talk, i) =>
                 <Project isTalk={true} project={talk} i={i} key={i} isVisible={isVisible} style={{margin: "0px 4px 0px 26px !important"}} />)}
