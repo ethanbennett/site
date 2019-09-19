@@ -25,7 +25,7 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .Content {

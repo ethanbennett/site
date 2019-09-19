@@ -21,12 +21,6 @@
   margin-right: -100px;
 }
 
-.talk-p {
-  margin-left: 34px !important;
-  width: 80% !important;
-  margin-bottom: 45px !important;
-}
-
 .scroll-indicator h3 {
   text-align: center;
   color: #aaa;
@@ -166,6 +160,12 @@
 
   .panda-image .Image {
     background-position: 125%;
+  }
+
+  .talk-p {
+    margin-left: 34px !important;
+    width: 80% !important;
+    margin-bottom: 45px !important;
   }
 
   .work-title {
