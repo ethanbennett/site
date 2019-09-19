@@ -83,7 +83,7 @@
 }
 
 .projects {
-  margin-bottom: 60px !important;
+  margin-bottom: 100px !important;
 }
 
 .work-title {
@@ -94,6 +94,12 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+  .projects li {
+    margin: 0px 70px 0px 70px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .Project {
     margin: 0px 17px 0px 17px;
@@ -102,7 +108,7 @@
 
 @media screen and (max-width: 1000px) {
   .Work {
-    /* margin-left: 0px; */
+    margin-left: 0px;
     margin-bottom: -95px;
     max-width: 1000px;
   }
