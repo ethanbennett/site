@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ethanbennett.co
+Token: bb708e7d9e5022007c76b6c2d0f2c85697b26992201b212c856704a20357aa0f
