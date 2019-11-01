@@ -24,7 +24,7 @@ const talks = [
   {
     image: require('./img/dappcon.jpeg'),
     title: 'Why Finance Can Be Better on Ethereum',
-    description: 'In this talk, I argue that an important (and often overlooked) advantage that decentralized finance projects have over legacy institutions are their vastly more open-minded attitudes towards new approaches to economic thinking. As an example, I discuss complexity economics: an agent-based, bottom up view of markets as complex systems.',
+    description: 'In this talk, I argue that an important (and often overlooked) advantage that decentralized finance projects have over legacy institutions is their vastly more open-minded attitude towards new approaches to economic thinking. As an example, I discuss complexity economics: an agent-based, bottom up view of markets as complex systems.',
     url: 'https://www.youtube.com/watch?v=ID4OJZm6ETg'
   },
   {
